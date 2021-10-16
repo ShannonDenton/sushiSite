@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi</title>
+    <style>
+      body {
+        background-color: #260c1a;
+        display: block;
+        margin: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Varela Round", sans-serif;
+        color: #c5d86d;
+        font-weight: bolder;
+        border: 2px solid #c5d86d;
+        border-radius: 6px;
+        margin: 15px auto;
+        padding: 20px;
+        display: block;
+        font-size: 3.75em;
+        width: 60%;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: "Varela Round", sans-serif;
+        color: #ee5d36;
+        display: block;
+      }
+
+      p {
+        text-align: center;
+        font-family: "Varela Round", sans-serif;
+        color: white;
+        line-height: 33px;
+        font-weight: lighter;
+        display: block;
+      }
+
+      a {
+        text-align: center;
+        font-family: "Varela Round", sans-serif;
+        color: #c5d86d;
+        display: block;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 15px;
+        font-family: "Varela Round", sans-serif;
+        color: white;
+        line-height: 33px;
+        display: block;
+        font-weight: normal;
+        letter-spacing: 1px;
+      }
+
+      iframe {
+        display: block;
+        margin: 0 auto;
+      }
+
+      h4 {
+        text-align: center;
+        font-family: "Varela Round", sans-serif;
+        color: white;
+        display: block;
+        font-weight: bolder;
+      }
+
+      ul {
+        text-align: center;
+        list-style-type: none;
+        font-family: "Varela Round", sans-serif;
+        color: white;
+        display: block;
+      }
+
+      li span {
+        font-size: 45px;
+        color: white;
+      }
+
+      button {
+        background-color: #c5d86d;
+        border: none;
+        font-family: "Varela Round", sans-serif;
+        font-size: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+        margin: auto;
+        transition: opacity 150ms ease;
+        display: block;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #727c3d;
+      }
+
+      h5 {
+        font-size: 15px;
+        color: #e6b440;
+        font-family: "Quicksand", sans-serif;
+        text-align: center;
+        font-weight: lighter;
+        display: block;
+      }
+
+      #logo-container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo-container">
+      <a href="file:///Users/shannondenton/Desktop/HTML/BasicsFinalProject.html"
+        ><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/895/original/jakub-dziubak-iOHJKJqO6E0-unsplash.jpeg?1631217380"
+          alt="Plate of sushi"
+      /></a>
+    </div>
+
+    <h1>Sushi Time!🥢</h1>
+
+    <h2>Sashimi, Nigiri, Maki, Oh My!</h2>
+
+    <p>
+      Outside of Japan, sushi is considered by many as the quintessential
+      Japanese food though it often takes on the Westernized appearance of sushi
+      rolls, like the California roll or the salmon and avocado roll. But beyond
+      what you may already know, there is a wide range of differing shapes,
+      sizes, and flavors that have continued to develop in Japan since the 8th
+      century.
+    </p>
+
+    <br />
+
+    <a
+      href="https://www.tablespoon.com/posts/know-your-sushi-types-and-terms-before-ordering"
+      target="_blank"
+    >
+      Learn more about your favorite <strong>sushi</strong> here!</a
+    >
+
+    <br />
+
+    <h3>
+      Below is a day in the life video of a sushi master where he shows us every
+      amazing thing a sushi master does in a day!
+    </h3>
+
+    <br />
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/3wAQxJeyyXo"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <br />
+
+    <hr />
+
+    <h4>Yum! I can't decide which one sounds tastiest! 🍱</h4>
+
+    <ul>
+      <li>
+        <span><strong>🥢 Sashimi</strong></span>
+        <p>
+          Technically not sushi! While sushi is fish that is served with rice
+          and may be adorned with other ingredients, sashimi is simply the raw
+          fish, served as is.
+        </p>
+      </li>
+      <li>
+        <span><strong>🥢 Nigiri</strong></span>
+        <p>
+          Nigiri is a style of sushi that is made by molding a ball of vinegared
+          rice by hand and topping it with a slice of raw fish. It’s usually
+          served with two pieces and can be eaten with the hands.
+        </p>
+      </li>
+      <li>
+        <span><strong>🥢 Maki</strong></span>
+        <p>
+          There are a variety of maki sushi rolls you can order which range in
+          size and style.
+        </p>
+      </li>
+    </ul>
+    <hr />
+
+    <p>Which of the three is your favorite?</p>
+
+    <button>🍣 😍</button>
+
+    <h5>⭐️ Coded by Shannon Nicole Denton ⭐️</h5>
+
+    <script>
+      function sashimiButton() {
+        let name = prompt("What is your name?");
+        let sushi = prompt("Which type of sushi did you like?");
+        if (sushi === "nigiri") {
+          alert("Hey " + name + "! Wow, that one's my favorite too! 😋");
+        } else {
+          alert("That's such a great choice, " + name + "! 😍");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", sashimiButton);
+    </script>
+  </body>
+</html>
